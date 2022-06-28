@@ -8,6 +8,18 @@ const Fonte = styled.h2 `
     color: red;
 `;
 
+const RowContainer = styled.RowContainer; `
+    margin-left: 20px;
+    color: white;
+`;
+
+const Cards = styled.row-Cards; `
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+`
+
 const imageHost = "https://image.tmdb.org/t/p/original/";
 
 function Row({title,path}) {
