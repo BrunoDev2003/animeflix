@@ -10,11 +10,14 @@ function App() {
     {/* Em alta*/}
     {/* filmes de cada categoria*/}
     {categories.map((category) => {
-      return <Row 
+      return (
+      <Row 
         key={ category.name} 
         title={category.title} 
         path={category.path}
+        isLarge={category.isLarge}
         />
+      );
     })}
     <Row/>
     </div>
