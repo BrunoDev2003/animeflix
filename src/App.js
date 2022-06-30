@@ -9,6 +9,7 @@ function App() {
     {/* Destaque*/}
     {/* Em alta*/}
     {/* filmes de cada categoria*/}
+    <Banner/>
     {categories.map((category) => {
       return (
       <Row 
