@@ -7,22 +7,20 @@ function Nav() {
         window.addEventListener("scroll",() =>{
             setShow(window.scrollY > 100);
         });
-
-        return () => {
-            window.removeEventListener("scroll");
-    };
-}, []);
+    },[]);
     return (
     <div className={`nav-container ${show && "nav-container-black"}`}>
-        <img className="nav-logo"
-        src="https://upload.wikipedia.org/wikipedia/commons/0/0"
+        <img 
+        className="nav-logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
         alt="Netflix"
         >
             
         </img>
         
-        <img className="nav-avatar" alt="Bruno"
-        src="https://upload.wikipedia.org/wikipedia/commons"
+        <img className="nav-avatar" 
+            alt="Bruno"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPsVAeFlYeYOEUzb3TV1ML91_LPkkFML5lRQcMdr9nQu2CqO-WzT-RLmkM5_cOKvkaBkI&usqp=CAU"
         >
 
         </img>
