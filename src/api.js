@@ -4,19 +4,19 @@ const categories = [
     {
         name: "trending",
         title: "Em alta",
-        path: `/trending/all/week?api_key=${API_KEY}&language=pt-br`,
+        path: `/trending/all/week?api_key=${API_KEY}&language=pt-BR`,
         isLarge: true
     },
     {
         name: "animeflixOriginals",
         title: "Originais Animeflix",
-        path: `/discover/tv?api_key=${API_KEY}&language=pt-br`,
+        path: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
         isLarge: false
     },
     {
         name: "topRated",
         title: "Populares",
-        path: `/movie/top_rated?api_key=${API_KEY}&language=pt-br`,
+        path: `/movie/top_rated?api_key=${API_KEY}&language=pt-BR`,
         isLarge: false
     },
     {

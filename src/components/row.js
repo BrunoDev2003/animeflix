@@ -38,7 +38,7 @@ function Row({title,path,isLarge}) {
 
     useEffect(() => {
     fetchMovies(path);
-    }, [path])
+    }, [path]);
     
     return (
     <div className="row-container">
@@ -52,10 +52,11 @@ function Row({title,path,isLarge}) {
                 return (
                     
                     <img 
-                    className={`movie-card ${isLarge && "movie-card-lounge"}`}
+                    className={`movie-card ${isLarge && "movie-card-large"}`}
                     key={movie.id} 
                     src={`${imageHost}${
-                        isLarge ? movie.backdrop_path : movie.poster_path}`}
+                        isLarge ? movie.backdrop_path : movie.poster_path
+                    }`}
                     alt={movie.name}
                     ></img>
                 );
@@ -67,4 +68,4 @@ function Row({title,path,isLarge}) {
     )
 }
 
-export default Row
+export default Row;

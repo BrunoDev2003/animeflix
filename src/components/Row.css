@@ -1,4 +1,6 @@
-
+h2.row-header {
+    display: inline-block;
+}
 
 .movie-card {
     width: 100%;

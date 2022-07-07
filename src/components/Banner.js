@@ -1,6 +1,5 @@
 import React from 'react';
-import { getMovies } from '../api';
-import categories from "../api"
+import categories, { getMovies } from '../api';
 import "./Banner.css";
 import { useEffect } from 'react';
 
@@ -33,7 +32,7 @@ function Banner() {
         style={{
         backgroundSize: "cover",
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-        position: "center-center",
+        roundPosition: "center-center",
     }} 
     
     > 
